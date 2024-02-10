@@ -4,17 +4,10 @@
 
 ## Table of Contents
 
-- [Next.js Enterprise Boilerplate](#nextjs-enterprise-boilerplate)
   - [Features](#features)
   - [Table of Contents](#table-of-contents)
   - [Getting Started](#-getting-started)
   - [Deployment](#-deployment)
-  - [Scripts Overview](#-scripts-overview)
-  - [Coupling Graph](#-coupling-graph)
-  - [Testing](#-testing)
-    - [Running Tests](#running-tests)
-    - [Acceptance Tests](#acceptance-tests)
-    - [Smoke Testing](#smoke-testing)
   - [Styling and Design System](#-styling-and-design-system)
     - [CVA - A New Approach to Variants](#cva---a-new-approach-to-variants)
   - [State Management](#-state-management)
