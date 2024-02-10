@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
+const { nextui } = require("@nextui-org/react")
 const { pick, omit } = require("lodash")
 const colors = require("tailwindcss/colors")
 const defaultTheme = require("tailwindcss/defaultTheme")
@@ -13,26 +14,55 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
       colors: {
         primary: {
-          50: "#eff6ff",
-          100: "#dbeafe",
-          200: "#bfdbfe",
-          300: "#93c5fd",
-          400: "#60a5fa",
-          500: "#3b82f6",
-          600: "#2563eb",
-          700: "#1d4ed8",
-          800: "#1e40af",
-          900: "#1e3a8a",
-        },
+            50: "#f0f1ff",
+            100: "#cfd3fe",
+            200: "#b8befd",
+            300: "#98a1fc",
+            400: "#848efc",
+            500: "#6572fb",
+            600: "#5c68e4",
+            700: "#4851b2",
+            800: "#383f8a",
+            900: "#2a3069",
+            DEFAULT: "#6572fb"
+          },
+        secondary: "#5c68e4",
+        card: {
+          50: "#f0f1ff",
+          100: "#cfd3fe",
+          200: "#b8befd",
+          300: "#98a1fc",
+          400: "#848efc",
+          500: "#6572fb",
+          600: "#5c68e4",
+          700: "#4851b2",
+          800: "#383f8a",
+          900: "#2a3069",
+          DEFAULT: "#6572fb"
+        }
+      //   ≈
+      //  primaryForeground: {
+      //   50: "#f0f1ff",
+      //   100: "#cfd3fe",
+      //   200: "#b8befd",
+      //   300: "#98a1fc",
+      //   400: "#848efc",
+      //   500: "#6572fb",
+      //   600: "#5c68e4",
+      //   700: "#4851b2",
+      //   800: "#383f8a",
+      //   900: "#2a3069",
+      // },
       },
       fontFamily: {
         body: [
-          "Inter",
+          "Nunito",
           "ui-sans-serif",
           "system-ui",
           "-apple-system",
@@ -49,7 +79,7 @@ module.exports = {
           "Noto Color Emoji",
         ],
         sans: [
-          "Inter",
+          "Nunito",
           "ui-sans-serif",
           "system-ui",
           "-apple-system",
@@ -83,7 +113,10 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  darkMode: ["class"],
+  plugins: [
+    nextui(),
+  ],
   future: {
     hoverOnlyWhenSupported: true,
   },
